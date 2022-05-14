@@ -8,5 +8,6 @@
         public int capacity { get; set; }
         public int numberOfWheels { get; set; }
         public string GetDescription();
+
     }
 }
