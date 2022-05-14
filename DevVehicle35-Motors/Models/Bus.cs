@@ -34,21 +34,36 @@ namespace DevVehicle35_Motors.Models
             this.price += increase;
         }
 
-        internal void hasEntertainment()
+        internal void AddEntertainment()
         {
             this.hasEntertaintament = true;
             this.IncreasePrice(300);
         }
 
-        internal void addBathroom()
+        internal void AddBathroom()
         {
             this.hasBathroom = true;
             this.IncreasePrice(500);
         }
-
-        private readonly public string GetDescription()
+        internal void AddSeats(int seats)
         {
-            throw new NotImplementedException();
+            capacity += seats;
+            this.IncreasePrice(seats * 100);
+        }
+        public string GetDescription()
+        {
+            string info = "Description of Bus Functionality: \n" +
+                "Velocity: " + speed +"\n" + "Horse Power: " + horsePower +"\n"+
+                "Seats capacity: " + capacity + "\n"+ "Number Of Wheels: " + numberOfWheels;
+            if (hasEntertaintament)
+            {
+                info= "\n" + "This Bus has Entertainment";
+            }
+            if (hasBathroom)
+            {
+                info = "\n" + "Its Final Price is " + price +".$";
+            }
+            return info;
         }
     }
 }
