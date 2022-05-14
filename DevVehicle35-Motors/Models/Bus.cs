@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DevVehicle35_Motors.Models
+﻿namespace DevVehicle35_Motors.Models
 {
     internal class Bus : IMainVehicle
     {
@@ -22,6 +16,7 @@ namespace DevVehicle35_Motors.Models
         private bool hasBathroom;
 
         internal bool HasEntertainment { get => hasEntertainment; private set => hasEntertainment = value; }
+
         internal bool HasBathroom { get => hasBathroom; private set => hasBathroom = value; }
 
         internal Bus()
@@ -45,7 +40,7 @@ namespace DevVehicle35_Motors.Models
 
             if (hasBathroom)
             {
-                info += "\n" + "Has bathroom        "+ hasBathroom;
+                info += "\n" + "Has bathroom        " + hasBathroom;
             }
 
             info += "\n" + "Its Final Price is: " + price + " $.";

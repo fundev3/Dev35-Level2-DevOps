@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DevVehicle35_Motors.Models;
+﻿using DevVehicle35_Motors.Models;
 
 namespace DevVehicle35_Motors.App
 {
@@ -15,23 +10,23 @@ namespace DevVehicle35_Motors.App
             if (ValidateInput("Wish you add Online Entertainment?"))
             {
                 busan.AddEntertainment();
-                Console.Clear();
             }
 
+            Console.Clear();
             if (ValidateInput("Wish you add a bathroom in the bus?"))
             {
                 busan.AddBathroom();
-                Console.Clear();
             }
 
+            Console.Clear();
             if (ValidateInput("Wish you add more seats?"))
             {
                 Console.WriteLine("Enter the amount of seat you wish to add");
                 int seatAmount = int.Parse(Console.ReadLine());
                 busan.AddSeats(seatAmount);
-                Console.Clear();
             }
 
+            Console.Clear();
             Console.WriteLine(busan.GetDescription());
             Console.WriteLine("\nCONGRATULATION YOU HAVE BUILD A BUS SUCESSFULLY");
         }
