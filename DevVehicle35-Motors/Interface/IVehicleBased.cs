@@ -1,6 +1,6 @@
 ﻿namespace DevVehicle35_Motors
 {
-    internal interface iMainVehicle
+    internal interface IVehicleBased
     {
         public decimal price { get; set; }
         public int speed { get; set; }
