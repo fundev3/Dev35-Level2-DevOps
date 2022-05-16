@@ -8,11 +8,11 @@ namespace DevVehicle35_Motors
 {
     internal class MiniBus : IVehicleBased
     {
-        public decimal price { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int speed { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int horsePower { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int capacity { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int numberOfWheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public decimal price { get ; set; }
+        public int speed { get; set; }
+        public int horsePower { get ; set; }
+        public int capacity { get; set; }
+        public int numberOfWheels { get; set; }
         private bool automaticDoor;
         const int passengersCost = 50;
         const int automaticDoorCost = 300;
@@ -50,10 +50,12 @@ namespace DevVehicle35_Motors
         public string GetDescription()
         {
             return $"The car is an: MiniBus\n " +
-                   $"It "+(automaticDoor?"has":"has not")+" automaticdoor\n" +
-                   $"Capacity: {capacity} \n" +
+                   $"It " + (automaticDoor ? "has" : "has not") + " automaticdoor\n" +
+                   $"Capacity: {passengersCost} * {capacity} \n" +
                    $"Number of wheels: {numberOfWheels}\n" +
-                   $"";
+                   $"Horse Power:  {horsePower}\n" +
+                   $"Speed: {speed}\n" +
+                   $"Price: {price}";
         }
     }
 }
