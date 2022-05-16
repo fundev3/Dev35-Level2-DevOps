@@ -27,7 +27,7 @@ Based on the teams that are asigned for the car dealership project we will do th
 8. You can't continue on the next step until your branch has been merged and deleted.
 
 ## Teams
-7. Gitters2 - Jean Paul Santivañez, Leonardo Echalar Aguilar
+7. Gitting - Jean Paul Santivañez, Leonardo Echalar Aguilar
 
 ## Git commands
 1. Add
