@@ -13,7 +13,8 @@ Based on the teams that are asigned for the car dealership project we will do th
 
 ## Links of interest:
 [Github Markdown CheatSheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
-Note.- If any team got to do some nice/interesting formatting on the Readme.md or the "Teams" file it will be notified to the different teams in order to refactor their files. This will be posted on the Teams Channel.
+
+**Note.-** If any team got to do some nice/interesting formatting on the Readme.md or the "Teams" file it will be notified to the different teams in order to refactor their files. This will be posted on the Teams Channel.
 
 ## Rules:
 
