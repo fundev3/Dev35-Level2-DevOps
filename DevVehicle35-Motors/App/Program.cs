@@ -8,6 +8,7 @@ while (option != "q")
     Console.WriteLine();
     Console.WriteLine("Select the type of vehicle you want to build:");
     Console.WriteLine("q. Quit");
+    Console.WriteLine("Write minibus");
     option = Console.ReadLine() ?? string.Empty;
     if(option == "minibus")
 	{
