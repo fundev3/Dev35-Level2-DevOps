@@ -11,12 +11,15 @@ while (option != "q")
     Console.WriteLine("3. Quad");
     Console.WriteLine("q. Quit");
     option = Console.ReadLine() ?? string.Empty;
-    switch (int.Parse(option))
+    if (option != "q")
     {
-        case 3:
-            QuadInteraction.BuildQuad();
-            break;
-        default:
-            break;
+        switch (int.Parse(option))
+        {
+            case 3:
+                QuadInteraction.BuildQuad();
+                break;
+            default:
+                break;
+        }
     }
 }
