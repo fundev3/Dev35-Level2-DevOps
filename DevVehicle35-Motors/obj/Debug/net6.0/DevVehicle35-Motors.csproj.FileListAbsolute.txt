@@ -1,0 +1,15 @@
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\bin\Debug\net6.0\DevVehicle35-Motors.exe
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\bin\Debug\net6.0\DevVehicle35-Motors.deps.json
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\bin\Debug\net6.0\DevVehicle35-Motors.runtimeconfig.json
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\bin\Debug\net6.0\DevVehicle35-Motors.dll
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\bin\Debug\net6.0\DevVehicle35-Motors.pdb
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\obj\Debug\net6.0\DevVehicle35-Motors.csproj.AssemblyReference.cache
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\obj\Debug\net6.0\DevVehicle35-Motors.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\obj\Debug\net6.0\DevVehicle35-Motors.AssemblyInfoInputs.cache
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\obj\Debug\net6.0\DevVehicle35-Motors.AssemblyInfo.cs
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\obj\Debug\net6.0\DevVehicle35-Motors.csproj.CoreCompileInputs.cache
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\obj\Debug\net6.0\DevVehicle35-Motors.dll
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\obj\Debug\net6.0\refint\DevVehicle35-Motors.dll
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\obj\Debug\net6.0\DevVehicle35-Motors.pdb
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\obj\Debug\net6.0\DevVehicle35-Motors.genruntimeconfig.cache
+D:\Projects\Dev35-Level2-DevOps\DevVehicle35-Motors\obj\Debug\net6.0\ref\DevVehicle35-Motors.dll
