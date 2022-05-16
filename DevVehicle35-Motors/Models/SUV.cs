@@ -16,9 +16,16 @@
 
         public int NumberOfWheels { get; set; }
 
+        private int NumberOfDoors { get; set; }
+
         public string GetDescription()
         {
             throw new NotImplementedException();
+        }
+
+        public int GetPrice()
+        {
+            return this.NumberOfDoors == 2 ? 600 : 1500;
         }
     }
 }
