@@ -27,7 +27,9 @@ Based on the teams that are asigned for the car dealership project we will do th
 8. You can't continue on the next step until your branch has been merged and deleted.
 
 ## Teams
-1.
+1. Gitters (Raul Camacho, Sergio Fernandez)
+2. Code:) (Andrea Peñaranda Neira, Mariana Villarroel)
+3. Team Tricked (Daniel Vega Aguirre, Michael Mollinedo Peña)
 
 ## Git commands
 1. Add
