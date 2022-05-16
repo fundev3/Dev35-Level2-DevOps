@@ -28,6 +28,7 @@ Based on the teams that are asigned for the car dealership project we will do th
 
 ## Teams
 1. Gitters (Raul Camacho, Sergio Fernandez)
+3. The Valkyries (Elizabeth Mamani, Camila Laura)
 
 ## Git commands
 1. Add
