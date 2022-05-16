@@ -30,6 +30,7 @@ Based on the teams that are asigned for the car dealership project we will do th
 1. Gitters (Raul Camacho, Sergio Fernandez)
 2. Code:) (Andrea Peñaranda Neira, Mariana Villarroel)
 3. Krypto (Jose Arcani, Ariel Suarez)
+4. TheBug (Missael Rodriguez, Alejandro Zeballos)
 
 ## Git commands
 1. Add
