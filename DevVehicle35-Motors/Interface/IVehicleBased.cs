@@ -1,12 +1,12 @@
 ﻿namespace DevVehicle35_Motors
 {
-    internal interface iMainVehicle
+    internal interface IVehicleBased
     {
-        public decimal price { get; set; }
-        public int speed { get; set; }
-        public int horsePower { get; set; }
-        public int capacity { get; set; }
-        public int numberOfWheels { get; set; }
+        public decimal Price { get; set; }
+        public int Speed { get; set; }
+        public int HorsePower { get; set; }
+        public int Capacity { get; set; }
+        public int NumberOfWheels { get; set; }
         public string GetDescription();
     }
 }
