@@ -4,7 +4,7 @@ We will use this branch to do some git command practices
 Based on the teams that are asigned for the car dealership project we will do this.
 
 1. Add at the "Team" section, the name for your team and the members of it. It must be a numbered list.
-2. On the folder "Teams", create a new text file with a short description of both of you that has: Name, Country, Prefereed Coding Language. Naming should be "numberedllistorder-teamName.txt", please use any formatting that you would like.
+2. On the folder "Teams", create a new text file with a short description of both of you that has: Name, Country, Prefereed Coding Language. Naming should be "numberedllistorder-teamName.md", please use any formatting that you would like.
 3. Add an image or logo that identifies your team.
 4. On the description of your team add your hobbies.
 5. Create a link from the "Team" section to this newly created file.
