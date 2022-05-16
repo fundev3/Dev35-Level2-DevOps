@@ -28,6 +28,7 @@ Based on the teams that are asigned for the car dealership project we will do th
 
 ## Teams
 1.
+9. K and C(Kevin Lopez, Carlos Zurita).
 
 ## Git commands
 1. Add
