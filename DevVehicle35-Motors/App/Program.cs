@@ -1,4 +1,4 @@
-﻿using DevVehicle35_Motors.App;
+using DevVehicle35_Motors.App;
 using System;
 
 Console.WriteLine("DevVehicles 35 Car Dealership");
