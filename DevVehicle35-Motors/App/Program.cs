@@ -9,6 +9,7 @@ while (option != "q")
 {
     Console.WriteLine();
     Console.WriteLine("Select the type of vehicle you want to build:");
+    Console.WriteLine("1. Car");
     Console.WriteLine("2. Bus");
     Console.WriteLine("3. Quad");
     Console.WriteLine("q. Quit");
@@ -17,6 +18,9 @@ while (option != "q")
     {
         switch (int.Parse(option))
         {
+            case 1:
+                CarInteraction.BuildCar();
+                break;
             case 2:
                 BusInteraction.BuildBus();
                 break;

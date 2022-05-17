@@ -5,19 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace carproject.App
+namespace DevVehicle35_Motors.App
 {
     class CarInteraction
     {
-        public void BuildCar() {
+        public static void BuildCar() {
             
-            this.SelectColorView();
-            int optionColor = this.ReadOption();
-            string colorCar = this.DetermineColor(optionColor);
+            SelectColorView();
+            int optionColor = ReadOption();
+            string colorCar = DetermineColor(optionColor);
             
-            this.SelectNumberDoors();
-            int optionDoors = this.ReadOption();
-            int doorsCar = this.DetermineNumberDoors(optionDoors);
+            SelectNumberDoorsView();
+            int optionDoors = ReadOption();
+            int doorsCar = DetermineNumberDoors(optionDoors);
 
             //Create car
             Car myCar = new Car(colorCar,doorsCar);
@@ -27,7 +27,7 @@ namespace carproject.App
             Console.WriteLine(myCar.GetDescription());
             
         }
-        private void SelectColorView() {
+        private static void SelectColorView() {
 
             Console.WriteLine("======= Select a Car color ===============================");
             Console.WriteLine("======================================");
@@ -38,7 +38,7 @@ namespace carproject.App
             Console.WriteLine("======================================");
         }
 
-        private void SelectNumberDoors()
+        private static void SelectNumberDoorsView()
         {
             Console.WriteLine("======= Select Number of Doors =======================");
             Console.WriteLine("======================================");
@@ -47,7 +47,7 @@ namespace carproject.App
             Console.WriteLine("======================================");
         }
 
-        private string DetermineColor(int optionColor) {
+        private static string DetermineColor(int optionColor) {
             if (optionColor == 1) {
                 return "Red";
             } else if (optionColor == 2) {
@@ -63,7 +63,7 @@ namespace carproject.App
             return "Red";
         }
 
-        private int DetermineNumberDoors(int optionColor)
+        private static int DetermineNumberDoors(int optionColor)
         {
             if (optionColor == 1)
             {
@@ -77,7 +77,7 @@ namespace carproject.App
             return 2;
         }
 
-        private int ReadOption() {
+        private static int ReadOption() {
             string selection = Console.ReadLine();
             return int.Parse(selection);
         }
