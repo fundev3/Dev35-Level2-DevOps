@@ -1,6 +1,7 @@
 ﻿using DevVehicle35_Motors.App;
+using System;
 
-Console.WriteLine("DevVehicles 35 Fabrica de Autos");
+Console.WriteLine("DevVehicles 35 Car Dealership");
 Console.WriteLine("===============================");
 
 string option = string.Empty;
@@ -18,7 +19,7 @@ while (option != "q")
         {
             case 2:
                 BusInteraction.BuildBus();
-            break;
+                break;
             case 3:
                 QuadInteraction.BuildQuad();
                 break;

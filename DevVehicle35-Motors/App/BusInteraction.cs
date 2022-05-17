@@ -1,4 +1,5 @@
 ﻿using DevVehicle35_Motors.Models;
+using System;
 
 namespace DevVehicle35_Motors.App
 {
@@ -6,16 +7,16 @@ namespace DevVehicle35_Motors.App
     {
         internal static void BuildBus()
         {
-            Bus busan = new ();
+            Bus bus = new ();
             if (ValidateInput("Wish you add Online Entertainment?"))
             {
-                busan.AddEntertainment();
+                bus.AddEntertainment();
             }
 
             Console.Clear();
             if (ValidateInput("Wish you add a bathroom in the bus?"))
             {
-                busan.AddBathroom();
+                bus.AddBathroom();
             }
 
             Console.Clear();
@@ -23,11 +24,11 @@ namespace DevVehicle35_Motors.App
             {
                 Console.WriteLine("Enter the amount of seat you wish to add");
                 int seatAmount = int.Parse(Console.ReadLine());
-                busan.AddSeats(seatAmount);
+                bus.AddSeats(seatAmount);
             }
 
             Console.Clear();
-            Console.WriteLine(busan.GetDescription());
+            Console.WriteLine(bus.GetDescription());
             Console.WriteLine("\nCONGRATULATION YOU HAVE BUILD A BUS SUCESSFULLY");
         }
 

@@ -1,16 +1,18 @@
-﻿namespace DevVehicle35_Motors.Models
+﻿using System.Text;
+
+namespace DevVehicle35_Motors.Models
 {
     internal class Bus : IMainVehicle
     {
-        public decimal price { get; set; }
+        public decimal Price { get; set; }
 
-        public int speed { get; set; }
+        public int Speed { get; set; }
 
-        public int horsePower { get; set; }
+        public int HorsePower { get; set; }
 
-        public int capacity { get; set; }
+        public int Capacity { get; set; }
 
-        public int numberOfWheels { get; set; }
+        public int NumberOfWheels { get; set; }
 
         private bool hasEntertainment;
         private bool hasBathroom;
@@ -21,30 +23,24 @@
 
         internal Bus()
         {
-            speed = 200;
-            horsePower = 10000;
-            price = 60000;
-            capacity = 20;
-            numberOfWheels = 4;
+            Speed = 200;
+            HorsePower = 10000;
+            Price = 60000;
+            Capacity = 20;
+            NumberOfWheels = 4;
         }
 
         public string GetDescription()
         {
-            string info = "Description of Bus Functionality: \n" +
-                "Velocity:           " + speed + "\n" + "Horse Power:        " + horsePower + "\n" +
-                "Seats capacity:     " + capacity + "\n" + "Number Of Wheels:   " + numberOfWheels;
-            if (hasEntertainment)
-            {
-                info += "\n" + "Has Entertainment:  " + hasEntertainment;
-            }
-
-            if (hasBathroom)
-            {
-                info += "\n" + "Has bathroom        " + hasBathroom;
-            }
-
-            info += "\n" + "Its Final Price is: " + price + " $.";
-            return info;
+            StringBuilder builder = new StringBuilder("Description of Bus Functionality: \n");
+            builder.Append("Velocity:           " + Speed + "\n");
+            builder.Append("Horse Power:        " + HorsePower + "\n");
+            builder.Append("Seats capacity:     " + Capacity + "\n");
+            builder.Append("Number Of Wheels:   " + NumberOfWheels + "\n");
+            builder.Append("Has Entertainment:  " + hasEntertainment + "\n");
+            builder.Append("Has bathroom        " + hasBathroom + "\n");
+            builder.Append("Its Final Price is: " + Price);
+            return builder.ToString();
         }
 
         internal void AddEntertainment()
@@ -61,13 +57,13 @@
 
         internal void AddSeats(int seats)
         {
-            capacity += seats;
+            Capacity += seats;
             this.IncreasePrice(seats * 100);
         }
 
         private void IncreasePrice(decimal increase)
         {
-            this.price += increase;
+            this.Price += increase;
         }
     }
 }
