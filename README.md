@@ -31,8 +31,8 @@ Based on the teams that are asigned for the car dealership project we will do th
 2. Code:) (Andrea Peñaranda Neira, Mariana Villarroel)
 3. Krypto (Jose Arcani, Ariel Suarez)
 4. The Valkyries (Elizabeth Mamani, Camila Laura)
+5. TheBug (Missael Rodriguez, Alejandro Zeballos)
 
->>>>>>> 37c9ee75dabf62d6523a07e608e43ac8ced80ed1
 
 ## Git commands
 1. Add
