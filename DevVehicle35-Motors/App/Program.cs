@@ -1,4 +1,5 @@
-﻿using DevVehicle35_Motors;
+using DevVehicle35_Motors.App;
+
 Console.WriteLine("DevVehicles 35 Fabrica de Autos");
 Console.WriteLine("===============================");
 
@@ -7,12 +8,19 @@ while (option != "q")
 {
     Console.WriteLine();
     Console.WriteLine("Select the type of vehicle you want to build:");
+    Console.WriteLine("3. Quad");
     Console.WriteLine("q. Quit");
     Console.WriteLine("Write minibus");
     option = Console.ReadLine() ?? string.Empty;
-    if(option == "minibus")
-	{
-        MiniBus miniStarter = new MiniBus();
-        Console.WriteLine(miniStarter);
+    if (option != "q")
+    {
+        switch (int.Parse(option))
+        {
+            case 3:
+                QuadInteraction.BuildQuad();
+                break;
+            default:
+                break;
+        }
     }
 }
