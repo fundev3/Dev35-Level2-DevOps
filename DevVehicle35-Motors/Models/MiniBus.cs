@@ -6,26 +6,27 @@ using System.Threading.Tasks;
 
 namespace DevVehicle35_Motors
 {
-    internal class MiniBus : IVehicleBased
+    internal class MiniBus : IMainVehicle
     {
-        public decimal price { get ; set; }
-        public int speed { get; set; }
-        public int horsePower { get ; set; }
-        public int capacity { get; set; }
-        public int numberOfWheels { get; set; }
+        public decimal Price { get; set; }
+        public int Speed { get  ; set ; }
+        public int HorsePower { get  ; set  ; }
+        public int Capacity { get  ; set  ; }
+        public int NumberOfWheels { get  ; set  ; }
+
         private bool automaticDoor;
         const int passengersCost = 50;
         const int automaticDoorCost = 300;
         public MiniBus()
         {
-            speed = 200;
-            horsePower = 1400;
-            price = 20000;
-            numberOfWheels = 4;
+            Speed = 200;
+            HorsePower = 1400;
+            Price = 20000;
+            NumberOfWheels = 4;
             automaticDoor = false;
 
             Console.WriteLine("How many passenger does it have?");
-            this.Capacity(int.Parse(Console.ReadLine()));
+            this.capacity(int.Parse(Console.ReadLine()));
 
             Console.WriteLine("does it have automatic doors? Y/N");
             string automaticDoors = Console.ReadLine();
@@ -35,27 +36,27 @@ namespace DevVehicle35_Motors
         }
         public decimal GetPrice()
         {
-            return price;
+            return Price;
         }
         public void AddAutomaticDoor()
         {
             automaticDoor = true;
-            price += automaticDoorCost;
+            Price += automaticDoorCost;
         }
-        public void Capacity(int passengers)
+        public void capacity(int passengers)
         {
-            capacity = passengers;
-            price += (passengers * passengersCost);
+            Capacity = passengers;
+            Price += (passengers * passengersCost);
         }
         public string GetDescription()
         {
             return $"The car is an: MiniBus\n " +
                    $"It " + (automaticDoor ? "has" : "has not") + " automaticdoor\n" +
-                   $"Capacity: {passengersCost} * {capacity} \n" +
-                   $"Number of wheels: {numberOfWheels}\n" +
-                   $"Horse Power:  {horsePower}\n" +
-                   $"Speed: {speed}\n" +
-                   $"Price: {price}";
+                   $"Capacity: {passengersCost} * {Capacity} \n" +
+                   $"Number of wheels: {NumberOfWheels}\n" +
+                   $"Horse Power:  {HorsePower}\n" +
+                   $"Speed: {Speed}\n" +
+                   $"Price: {Price}";
         }
     }
 }
