@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevVehicle35_Motors.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,14 +19,13 @@ namespace carproject.App
             int optionDoors = this.ReadOption();
             int doorsCar = this.DetermineNumberDoors(optionDoors);
 
-            //create car
-            //Car car = new Car();
-            //car.selectColor(colorCar);
-            //car.selectNumberDoors(doorsCar);
-            //price 
-            //car.showPrice();
-            //description
-            //car.showDescription();
+            //Create car
+            Car myCar = new Car(colorCar,doorsCar);
+            //Price 
+            Console.WriteLine(myCar.DeterminePrice());
+            //Description
+            Console.WriteLine(myCar.GetDescription());
+            
         }
         private void SelectColorView() {
 
