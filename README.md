@@ -33,6 +33,7 @@ Based on the teams that are asigned for the car dealership project we will do th
 4. TheBug (Missael Rodriguez, Alejandro Zeballos)
 5. Team Tricked (Daniel Vega Aguirre, Michael Mollinedo Peña)
 7. Gitting Jean Paul Santivañez, Leonardo Echalar
+9. K and C (Kevin Lopez, Carlos Zurita).
 
 ## Git commands
 1. Add
