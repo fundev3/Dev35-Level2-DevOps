@@ -15,5 +15,9 @@ namespace DevVehicle35_Motors
         {
             return this.price;
         }
+        public string GetTypeMoto()
+        {
+            return this.type;
+        }
     }
 }
