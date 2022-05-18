@@ -8,7 +8,7 @@
 
         public int HorsePower { get; set; }
 
-        public int Hapacity { get; set; }
+        public int Capacity { get; set; }
 
         public int NumberOfWheels { get; set; }
 
