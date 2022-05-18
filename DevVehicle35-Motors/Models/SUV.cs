@@ -51,7 +51,7 @@ namespace DevVehicle35_Motors.Models
 
         private void SetPrice()
         {
-            this.Price += this.NumberOfDoors == 2 ? 600 : 1500;
+            this.Price += this.NumberOfDoors == 2 ? 600 : 900;
         }
     }
 }
