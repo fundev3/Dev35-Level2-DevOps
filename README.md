@@ -29,6 +29,9 @@ Based on the teams that are asigned for the car dealership project we will do th
 ## Teams
 1. Gitters (Raul Camacho, Sergio Fernandez)
 2. Code:) (Andrea Peñaranda Neira, Mariana Villarroel)
+3. Krypto (Jose Arcani, Ariel Suarez)
+4. TheBug (Missael Rodriguez, Alejandro Zeballos)
+5. Team Tricked (Daniel Vega Aguirre, Michael Mollinedo Peña)
 7. Gitting Jean Paul Santivañez, Leonardo Echalar
 
 ## Git commands
