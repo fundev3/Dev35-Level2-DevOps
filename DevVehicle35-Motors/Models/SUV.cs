@@ -1,9 +1,20 @@
-﻿namespace DevVehicle35_Motors.Models
+﻿using System.Text;
+using DevVehicle35_Motors.Enum;
+
+namespace DevVehicle35_Motors.Models
 {
     internal class SUV : IMainVehicle
     {
-        public SUV()
+        public SUV(Colors color, TypeOfTraction traction)
         {
+            this.Speed = 180;
+            this.HorsePower = 4000;
+            this.Price = 35000;
+            this.Capacity = 6;
+            this.Color = color;
+            this.Traction = traction;
+            this.NumberOfWheels = 4;
+            this.SetPrice();
         }
 
         public decimal Price { get; set; }
@@ -12,20 +23,34 @@
 
         public int HorsePower { get; set; }
 
-        public int Hapacity { get; set; }
-
         public int NumberOfWheels { get; set; }
+
+        public int Capacity { get; set; }
 
         private int NumberOfDoors { get; set; }
 
+        private Colors Color { get; set; }
+
+        private TypeOfTraction Traction { get; set; }
+
         public string GetDescription()
         {
-            throw new NotImplementedException();
+            StringBuilder description = new StringBuilder("Description of SUV:\n");
+            description.AppendLine($"Color: {this.Color}");
+            description.AppendLine($"Horse power: {this.HorsePower} HP");
+            description.AppendLine($"Speed: {this.Speed} Km/h");
+            description.AppendLine($"Capacity: {this.Capacity} people");
+            description.AppendLine($"Number of wheels: {this.NumberOfWheels}");
+            description.AppendLine($"Number of doors: {this.NumberOfDoors}");
+            description.AppendLine($"Traction: {this.Traction}");
+            description.AppendLine($"Price: {this.Price}$");
+
+            return description.ToString();
         }
 
-        public int GetPrice()
+        private void SetPrice()
         {
-            return this.NumberOfDoors == 2 ? 600 : 1500;
+            this.Price += this.NumberOfDoors == 2 ? 600 : 1500;
         }
     }
 }
