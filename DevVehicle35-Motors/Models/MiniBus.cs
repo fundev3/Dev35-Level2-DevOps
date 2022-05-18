@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DevVehicle35_Motors
+﻿namespace DevVehicle35_Motors.Models
 {
     internal class MiniBus : IMainVehicle
     {
         public decimal Price { get; set; }
-        public int Speed { get  ; set ; }
-        public int HorsePower { get  ; set  ; }
-        public int Capacity { get  ; set  ; }
-        public int NumberOfWheels { get  ; set  ; }
+
+        public int Speed { get; set; }
+
+        public int HorsePower { get; set; }
+        
+        public int Capacity { get; set; }
+        
+        public int NumberOfWheels { get; set; }
 
         private bool automaticDoor;
         const int passengersCost = 50;

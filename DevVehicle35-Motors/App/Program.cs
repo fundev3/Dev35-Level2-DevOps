@@ -26,7 +26,7 @@ while (option != "q")
                 QuadInteraction.BuildQuad();
                 break;
             case 4:
-                
+                new MiniBus();
                 break;
             default:
                 break;
