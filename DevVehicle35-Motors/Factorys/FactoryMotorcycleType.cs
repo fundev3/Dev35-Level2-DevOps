@@ -25,8 +25,6 @@ namespace DevVehicle35_Motors.Factorys
 					break;
 			}
 			return type;
-			//return type.CreatePizza();
 		}
-
 	}
 }

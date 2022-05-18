@@ -15,6 +15,7 @@ namespace DevVehicle35_Motors
             HorsePower = 1000;
             Price = 2000;
             Capacity = 2;
+            NumberOfWheels = 2;
             this.parts = vehicleParts;
             this.helmet = helmet;
             this.typeMotorcycle = typeMotorcycle;
@@ -28,13 +29,22 @@ namespace DevVehicle35_Motors
 
         public string GetDescription()
         {
-            return String.Format("\nDescription of Motorcycle Functionality:\n{0}\nPrice =  {1}.",this.ToString(), this.FinalPrice());
+            StringBuilder builder = new StringBuilder("\nDescription of Motorcycle Functionality:\n");
+            builder.Append("Parts origin:       " + this.parts.Country + "\n");
+            builder.Append("Type:               " + this.typeMotorcycle.GetTypeMoto() + "\n");
+            builder.Append("Helmet:             " + this.GetHelmet() + "\n");
+            builder.Append("Speed:              " + Speed + " km/h\n");
+            builder.Append("Horse Power:        " + HorsePower + " hp\n");
+            builder.Append("Seats capacity:     " + Capacity + " obviously\n");
+            builder.Append("Number Of Wheels:   " + NumberOfWheels + "\n");
+            builder.Append("Its Final Price is: " + this.FinalPrice());
+            return builder.ToString();
         }
 
         private decimal FinalPrice()
         {
             decimal result = Price + this.parts.Price + this.typeMotorcycle.GetPrice();
-            if (helmet)
+            if (this.helmet)
             {
                 result += 100;
             }
@@ -53,11 +63,5 @@ namespace DevVehicle35_Motors
                 return "No";
             }
         }
-
-        public override string ToString()
-        {
-            return string.Format("\nParts = {0}\nHelmet = {1}\nType = {2}\nSpeed = {3}\nHorsePower = {4}\nCapacity = {5}\nNumberOfWheels = {6}", this.parts.Country, this.GetHelmet(), this.typeMotorcycle.GetTypeMoto(), Price, Speed, HorsePower, Capacity, NumberOfWheels);
-        }
-
     }
 }

@@ -16,12 +16,10 @@ namespace DevVehicle35_Motors
         internal string Country
         {
             get { return country; }
-            set { country = value; }
         }
         internal decimal Price
         {
             get { return price; }
-            set { price = value; }
         }
     }
 }

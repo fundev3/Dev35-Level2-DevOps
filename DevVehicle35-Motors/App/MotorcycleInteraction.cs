@@ -5,10 +5,6 @@ namespace DevVehicle35_Motors.App
     using DevVehicle35_Motors.Factorys;
     internal class MotorcycleInteraction
     {
-        internal MotorcycleInteraction()
-        {
-
-        }
         internal static void BuildMotorcycle()
         {
             bool helmet = ChooseHelmet();
@@ -17,15 +13,19 @@ namespace DevVehicle35_Motors.App
             Motorcycle motorcycle = new Motorcycle(helmet,vehicleParts,type);
             Console.WriteLine(motorcycle.GetDescription());
         }
-
-
         private static bool ChooseHelmet()
         {
             bool helmet = false;
             Console.WriteLine("\nDo you want include a helmet?");
             MenuAbstractClass.CreateOptionMenu(new string[] { "Yes", "No" });
-            Console.WriteLine("Enter your option: ");
-            int option = int.Parse(Console.ReadLine());
+            bool isNumber = false;
+            int option;
+            do
+            {
+                Console.WriteLine("Enter your option: ");
+                isNumber= int.TryParse(Console.ReadLine(), out option);
+                if (option > 2 || option <= 0) isNumber = false;
+            } while (isNumber == false);
 
             if (option == 1)
             {
@@ -33,24 +33,33 @@ namespace DevVehicle35_Motors.App
             }
             return helmet;
         }
-
         private static VehicleParts ChooseVehicleParts()
         {
             Console.WriteLine("\nSelect the origin of the motorcycle parts:");
             MenuAbstractClass.CreateOptionMenu(new string[] { "Japan", "Korea" });
-            Console.WriteLine("Enter your option: ");
-            return FactoryParts.CreateVehicleParts(int.Parse(Console.ReadLine()));            
+            bool isNumber = false;
+            int option;
+            do
+            {
+                Console.WriteLine("Enter your option: ");
+                isNumber = int.TryParse(Console.ReadLine(), out option);
+                if (option > 2 || option <= 0) isNumber = false;
+            } while (isNumber == false);
+            return FactoryParts.CreateVehicleParts(option);            
         }
-
         private static ITypeMotorcycle ChooseType()
         {
             Console.WriteLine("\nSelect the motorcycle type:");
             MenuAbstractClass.CreateOptionMenu(new string[] { "Standard", "Mountain", "Street" });
-            Console.WriteLine("Enter your option: ");
-            return FactoryMotorcycleType.CreateMotorcycleType(int.Parse(Console.ReadLine()));
+            bool isNumber = false;
+            int option;
+            do
+            {
+                Console.WriteLine("Enter your option: ");
+                isNumber = int.TryParse(Console.ReadLine(), out option);
+                if (option > 3 || option <= 0) isNumber = false;
+            } while (isNumber == false);
+            return FactoryMotorcycleType.CreateMotorcycleType(option);
         }
-
-
-
     }
 }
