@@ -32,7 +32,7 @@ Based on the teams that are asigned for the car dealership project we will do th
 3. Krypto (Jose Arcani, Ariel Suarez)
 4. The Valkyries (Elizabeth Mamani, Camila Laura)
 5. TheBug (Missael Rodriguez, Alejandro Zeballos)
-
+6. Team Tricked (Daniel Vega Aguirre, Michael Mollinedo Peña)
 
 ## Git commands
 1. Add
