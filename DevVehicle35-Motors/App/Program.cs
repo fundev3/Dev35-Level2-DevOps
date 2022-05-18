@@ -10,6 +10,7 @@ while (option != "q")
     Console.WriteLine("Select the type of vehicle you want to build:");
     Console.WriteLine("2. Bus");
     Console.WriteLine("3. Quad");
+    Console.WriteLine("5. SUV");
     Console.WriteLine("q. Quit");
     option = Console.ReadLine() ?? string.Empty;
     if (option != "q")
@@ -21,6 +22,9 @@ while (option != "q")
                 break;
             case 3:
                 QuadInteraction.BuildQuad();
+                break;
+            case 5:
+                SUVInteraction.BuildSUV();
                 break;
             default:
                 break;

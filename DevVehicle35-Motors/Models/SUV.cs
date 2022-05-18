@@ -5,7 +5,7 @@ namespace DevVehicle35_Motors.Models
 {
     internal class SUV : IMainVehicle
     {
-        public SUV(Colors color, TypeOfTraction traction)
+        public SUV(Colors color, TypeOfTraction traction, int NumberOfDoors)
         {
             this.Speed = 180;
             this.HorsePower = 4000;
@@ -14,6 +14,7 @@ namespace DevVehicle35_Motors.Models
             this.Color = color;
             this.Traction = traction;
             this.NumberOfWheels = 4;
+            this.NumberOfDoors = NumberOfDoors;
             this.SetPrice();
         }
 
