@@ -12,7 +12,7 @@ while (option != "q")
     Console.WriteLine("2. Bus");
     Console.WriteLine("3. Quad");
     Console.WriteLine("4. Motorcycle");
-    Console.WriteLine("5. Quit");
+    Console.WriteLine("q. Quit");
     option = Console.ReadLine() ?? string.Empty;
     if (option != "q")
     {
