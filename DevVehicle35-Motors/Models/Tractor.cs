@@ -6,27 +6,27 @@ using System.Threading.Tasks;
 
 namespace DevVehicle35_Motors.Interface
 {
-    internal class Tractor : iMainVehicle
+    internal class Tractor : IMainVehicle
     {
-        public decimal price { get; set; }
+        public decimal Price { get; set; }
 
-        public int speed { get; set; }
+        public int Speed { get; set; }
 
-        public int horsePower { get; set; }
+        public int HorsePower { get; set; }
 
         public int capacity { get; set; }
 
-        public int numberOfWheels { get; set; }
+        public int NumberOfWheels { get; set; }
 
         private bool doesItHaveWarningLights;
 
         public Tractor(int horsePower)
         {
-            this.price = 120000;
-            this.speed = 80;
+            this.Price = 120000;
+            this.Speed = 80;
             this.DefineHorsePower(horsePower);
-            this.capacity = 1;
-            this.numberOfWheels = 4;
+            this.Capacity = 1;
+            this.NumberOfWheels = 4;
             this.doesItHaveWarningLights = false;
         }
 
@@ -34,24 +34,24 @@ namespace DevVehicle35_Motors.Interface
         {
             string description = "\n---------- TRACTOR DESCRIPTION ----------\n" +
             "\n" +
-            "Speed: " + this.speed +
-            "\nHorse power: " + this.horsePower +
-            "\nCapacity: " + this.capacity +
-            "\nNumber of wheels: " + this.numberOfWheels;
+            "Speed: " + this.Speed +
+            "\nHorse power: " + this.HorsePower +
+            "\nCapacity: " + this.Capacity +
+            "\nNumber of wheels: " + this.NumberOfWheels;
 
             if (this.doesItHaveWarningLights)
             {
                 description += "\n" + "Warning lighths: Yes";
             }
 
-            description += "\n" + "Final price: " + this.price;
+            description += "\n" + "Final price: " + this.Price;
             return description;
         }
 
         public void DefineHorsePower(int horsePower)
         {
-                this.horsePower = horsePower;
-                this.price = this.price + (horsePower / 10);
+                this.HorsePower = horsePower;
+                this.Price = this.Price + (horsePower / 10);
         }
 
         public void SelectWarningLigths(int warningLigthsNumber)
@@ -59,18 +59,18 @@ namespace DevVehicle35_Motors.Interface
             if (warningLigthsNumber == 1)
             {
                 this.doesItHaveWarningLights = true;
-                this.price = this.price + 100;
+                this.Price = this.Price + 100;
             }
         }
 
         public void ShowHorsePower()
         {
-            Console.WriteLine("horse Power: {0}", this.horsePower);
+            Console.WriteLine("horse Power: {0}", this.HorsePower);
         }
 
         public void DeterminePrice()
         {
-            Console.WriteLine("Total price: {0}", this.price);
+            Console.WriteLine("Total price: {0}", this.Price);
         }
     }
 }
