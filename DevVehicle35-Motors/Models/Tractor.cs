@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;namespace DevVehicle35_Motors.Interface
+using System.Threading.Tasks;
+
+namespace DevVehicle35_Motors.Interface
 {
     internal class Tractor : iMainVehicle
     {
@@ -11,7 +13,8 @@ using System.Threading.Tasks;namespace DevVehicle35_Motors.Interface
         public int horsePower { get; set; }
         public int capacity { get; set; }
         public int numberOfWheels { get; set; }
-        private bool doesItHaveWarningLights = false;
+
+        private bool doesItHaveWarningLights;
         public Tractor(int horsePower)
         {
             this.price = 120000;
@@ -19,15 +22,17 @@ using System.Threading.Tasks;namespace DevVehicle35_Motors.Interface
             DefineHorsePower(horsePower);
             this.capacity = 1;
             this.numberOfWheels = 4;
+            this.doesItHaveWarningLights = false;
         }
         public string GetDescription()
         {
-            string description = "---------- TRACTOR DESCRIPTION ----------\n" +
+            string description = "\n---------- TRACTOR DESCRIPTION ----------\n" +
             "\n" +
             "Speed: " + speed +
             "\nHorse power: " + horsePower +
             "\nCapacity: " + capacity +
-            "\nNumber of wheels: " + numberOfWheels; if (doesItHaveWarningLights)
+            "\nNumber of wheels: " + numberOfWheels; 
+            if (doesItHaveWarningLights)
             {
                 description += "\n" + "Warning lighths: Yes";
             }
@@ -36,14 +41,8 @@ using System.Threading.Tasks;namespace DevVehicle35_Motors.Interface
         }
         public void DefineHorsePower(int horsePower)
         {
-            if (horsePower >= 63000 && horsePower <= 70000)
-            {
                 this.horsePower = horsePower;
-            }
-            else
-            {
-                Console.WriteLine("The horse power should be between 63000 and 70000");
-            }
+                price=price+horsePower/10;
         }
         public void SelectWarningLigths(int warningLigthsNumber)
         {
