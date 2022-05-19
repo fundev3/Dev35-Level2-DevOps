@@ -66,11 +66,11 @@ namespace DevVehicle35_Motors.App
 
         private static int DetermineNumberDoors(int optionDoors)
         {
-            if (optionColor == 1)
+            if (optionDoors == 1)
             {
                 return 2;
             }
-            else if (optionColor == 2)
+            else if (optionDoors == 2)
             {
                 return 4;
             }
