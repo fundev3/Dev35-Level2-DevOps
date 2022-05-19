@@ -47,7 +47,8 @@ namespace DevVehicle35_Motors.App
             Console.WriteLine("======================================");
         }
 
-        private static string DetermineColor(int optionColor) {
+        private static string DetermineColor(int optionColor)
+        {
             if (optionColor == 1) {
                 return "Red";
             } else if (optionColor == 2) {
@@ -55,7 +56,7 @@ namespace DevVehicle35_Motors.App
             } else if (optionColor == 3)
             {
                 return "Orange";
-            } else if (optionColor == 2)
+            } else if (optionColor == 4)
             {
                 return "White";
             }
