@@ -64,7 +64,7 @@ namespace DevVehicle35_Motors.App
             return "Red";
         }
 
-        private static int DetermineNumberDoors(int optionColor)
+        private static int DetermineNumberDoors(int optionDoors)
         {
             if (optionColor == 1)
             {
