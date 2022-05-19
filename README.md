@@ -33,7 +33,7 @@ Based on the teams that are asigned for the car dealership project we will do th
 4. TheBug (Missael Rodriguez, Alejandro Zeballos)
 5. Team Tricked (Daniel Vega Aguirre, Michael Mollinedo Peña)
 7. Gitting Jean Paul Santivañez, Leonardo Echalar
-
+8. OneGroup (Antonio Foronda Loza,José Alejandro Huanca Vargas)
 ## Git commands
 1. Add
 2. Commit
