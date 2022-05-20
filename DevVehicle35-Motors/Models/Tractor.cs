@@ -14,7 +14,7 @@ namespace DevVehicle35_Motors.Interface
 
         public int HorsePower { get; set; }
 
-        public int capacity { get; set; }
+        public int Capacity { get; set; }
 
         public int NumberOfWheels { get; set; }
 
