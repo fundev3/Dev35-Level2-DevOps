@@ -25,7 +25,7 @@ namespace DevVehicle35_Motors.Models
 		public int Capacity { get; set; }
 		public int NumberOfWheels { get; set; }
 		public bool Helmet { get; set; } = false; 
-		public string[] Colors { get; set; } = new[] { "WHITE","RED", "BLUE", "BLACK","PINK", "PURPLE", "TURQUOISE"}; 
+		public string Color { get; set; } 
 
 		public Scooter()
 				{
@@ -41,21 +41,26 @@ namespace DevVehicle35_Motors.Models
 		}
 
 		public string GetDescription()
-		{
-			//StringBuilder sb = new StringBuilder("Description of Quad: ");
-			//sb.AppendLine($"The Price is : {Price}");
-			//sb.AppendLine($"The Speed is : {Speed}");
-			//sb.AppendLine($"The Horse power is : {this.horsePower}");
-			//if (this.hadHelmet)
-			//{
-			//	sb.AppendLine($"This quad have a helmet");
-			//}
-			//return sb.ToString();
-			return ""; 
+		{   
+			string Presentation = (@"
+					---------------------------------
+					You Got the Following Scooter 🛵
+					----------------------------------");
+			string Description = $"\n \t \t \t \t \t The price is: {Price} \n" +
+                   $"\t \t \t \t \t The color is: {Color} \n" +
+			       $"\t \t \t \t \t The Top Speed is: {Speed} \n" +
+				   $"\t \t \t \t \t The Horse power is: {this.HorsePower} \n";
+			string GotHelmet = ""; 
+			if (this.Helmet)
+			{
+				GotHelmet = $"\t \t \t \t \t You got a Helmet\n"; 
+			}
+            return Presentation + Description + GotHelmet; 
 		}
 
 		public void SelectTopSpeed(string TopSpeed)
 		{
+			this.Speed = Int32.Parse(TopSpeed); 
 			const decimal PriceOfSpeed = 8.5m;
 			this.Price = Price + Decimal.Multiply(Convert.ToDecimal(TopSpeed),(PriceOfSpeed));
 		}
@@ -64,12 +69,15 @@ namespace DevVehicle35_Motors.Models
 		{
 			if (Helmet.ToUpper() == "YES")
 			{
+				this.Helmet = true; 
 				this.Price += 100m;
 			}
 		}
 
 		public void SelectColor(string Color)
 		{
+			string[] ScooterColors = new[] { "WHITE", "RED", "BLUE", "BLACK", "PURPLE", "YELLOW" };
+			this.Color = ScooterColors[Int32.Parse(Color) - 1]; 
 			int ColorNumber = Int32.Parse(Color);
 			if (ColorNumber - 1 != 0)
 			{
