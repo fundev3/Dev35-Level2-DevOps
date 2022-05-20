@@ -11,8 +11,6 @@ namespace DevVehicle35_Motors.Models
     {
         private  bool hadHelmet;
 
-        private  int horsePower;
-
         private string typeOfFuel = string.Empty;
 
 
@@ -52,7 +50,7 @@ namespace DevVehicle35_Motors.Models
             sb.AppendLine($"The Speed is : {Speed}");
             sb.AppendLine($"The Capacity is: {Capacity}");
             sb.AppendLine($"The type of fuel is : {this.typeOfFuel}");
-            sb.AppendLine($"The Horse power is : {this.horsePower}");
+            sb.AppendLine($"The Horse power is : {this.HorsePower}");
             if (this.hadHelmet)
             {
                 sb.AppendLine($"This quad have a helmet");
@@ -88,11 +86,11 @@ namespace DevVehicle35_Motors.Models
             if (power > 1200)
             {
                 this.Price += 10;
-                this.horsePower = 1400;
+                this.HorsePower = 1400;
             }
             else
             {
-                this.horsePower = 1200;
+                this.HorsePower = 1200;
             }
 
         }
