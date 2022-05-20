@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "b66JhXerQOsqWcWYm7qJecEVPbavGNSfxoPVfRaaSiZ/QS8H687vVIMUxXUps9r7bFFampFVu9tvgNNW38hTXg==",
+  "success": true,
+  "projectFilePath": "/Users/saracamilalauramanzaneda/Documents/JalaFundation/DevOps/Dev35-Level2-DevOps/DevVehicle35-Motors/DevVehicle35-Motors.csproj",
+  "expectedPackageFiles": [
+    "/Users/saracamilalauramanzaneda/.nuget/packages/stylecop/6.2.0/stylecop.6.2.0.nupkg.sha512",
+    "/Users/saracamilalauramanzaneda/.nuget/packages/stylecop.analyzers/1.1.118/stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'StyleCop 6.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "StyleCop",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
