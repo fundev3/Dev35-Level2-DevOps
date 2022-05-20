@@ -15,8 +15,7 @@ while (option != "q")
     Console.WriteLine("4. Motorcycle");
     Console.WriteLine("5. SUV");
     Console.WriteLine("6. Tractor");
-  
-  
+    Console.WriteLine("7. Van");
     Console.WriteLine("9. Scooter");
     Console.WriteLine("q. Quit");
     option = Console.ReadLine() ?? string.Empty;
@@ -42,12 +41,9 @@ while (option != "q")
             case 6:
                 TractorInteraction.BuildTractor();
                 break;
-            
-            
-            
-            
-            
-            
+            case 7:
+                VanInteraction.BuildVan();
+                break; 
             case 9:
                 ScooterInteraction.BuildScooter(); 
                 break; 
