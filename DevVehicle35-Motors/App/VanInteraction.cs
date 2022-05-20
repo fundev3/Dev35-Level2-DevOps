@@ -93,7 +93,7 @@ namespace DevVehicle35_Motors.App
 
         private static void SizeOfBedChoise()
         {
-            Console.WriteLine("Tell us, What is the size of bed of your preference?:");
+            Console.WriteLine("Tell us, What is your preferred bed size?:");
             if(Vcapacity == 1)
             {
                 Console.WriteLine("1. Simple Bed");
@@ -117,8 +117,8 @@ namespace DevVehicle35_Motors.App
         private static void BathroomChoise()
         {
             Console.WriteLine("Tell us, do you want it with a bathroom?:");
-            Console.WriteLine("1. True");
-            Console.WriteLine("2. False");
+            Console.WriteLine("1. Yes");
+            Console.WriteLine("2. No");
             Console.WriteLine("q. Quit");
         }
 
