@@ -33,11 +33,11 @@ namespace DevVehicle35_Motors.Models
 					Price = 1000;
 				}
 
-		public void GettingPrice()
+		public void GettingPrice(string TopSpeed, string Helmet, string Color)
 		{
-			SelectTopSpeed();
-			SelectHelmet();
-			SelectColor();
+			SelectTopSpeed(TopSpeed);
+			SelectHelmet(Helmet);
+			SelectColor(Color);
 		}
 
 		public string GetDescription()
@@ -54,44 +54,24 @@ namespace DevVehicle35_Motors.Models
 			return ""; 
 		}
 
-		public void SelectTopSpeed()
+		public void SelectTopSpeed(string TopSpeed)
 		{
-			int[] Speed = new[] { 40, 50, 60, 70, 80, 90 };
-			const decimal PriceOfSpeed = 8.5m; 
-			WriteLine(@"
-					  Choose Top Speed
-					  🛵 ➡ 40 km/h
-					  🛵 ➡ 50 km/h
-					  🛵 ➡ 60 km/h
-					  🛵 ➡ 70 km/h
-					  🛵 ➡ 80 km/h
-					  🛵 ➡ 90 km/h ");
-			string TopSpeed = ReadLine();
-			//SpeddVerification();
+			const decimal PriceOfSpeed = 8.5m;
 			this.Price = Price + Decimal.Multiply(Convert.ToDecimal(TopSpeed),(PriceOfSpeed));
 		}
-		public void SelectHelmet()
+
+		public void SelectHelmet(string Helmet)
 		{
-			WriteLine(@"
-						Do you want a helmet?
-						write: (yes / no)");
-			string AddHelmed = ReadLine();
-			if (AddHelmed.ToUpper() == "YES")
+			if (Helmet.ToUpper() == "YES")
 			{
 				this.Price += 100m;
 			}
 		}
 
-		public void SelectColor()
+		public void SelectColor(string Color)
 		{
-			WriteLine("Choose the numer of the color ------");
-			foreach (var color in this.Colors)
-			{
-				WriteLine("Color {0}: ", color);
-			}
-			string NumberOfColor = ReadLine();
-			int NumberColor = Int32.Parse(NumberOfColor);
-			if (NumberColor-1 != 0)
+			int ColorNumber = Int32.Parse(Color);
+			if (ColorNumber - 1 != 0)
 			{
 				this.Price += 100m; 
 			}
