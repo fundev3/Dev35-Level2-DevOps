@@ -9,14 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="StyleCop.Analyzers" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
-      <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="StyleCop" Version="6.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="StyleCop" />
   </ItemGroup>
 </Project>

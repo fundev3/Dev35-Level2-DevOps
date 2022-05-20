@@ -13,8 +13,8 @@ while (option != "q")
     Console.WriteLine("2. Bus");
     Console.WriteLine("3. Quad");
     Console.WriteLine("4. Motorcycle");
-  
-  
+    Console.WriteLine("5. SUV");
+    Console.WriteLine("6. Tractor");
   
   
     Console.WriteLine("9. Scooter");
@@ -36,14 +36,17 @@ while (option != "q")
             case 4:
                 MotorcycleInteraction.BuildMotorcycle();
                 break;
-
-
+            case 5:
+                SUVInteraction.BuildSUV();
+                break;
+            case 6:
+                TractorInteraction.BuildTractor();
+                break;
             
             
             
             
             
-           
             
             case 9:
                 ScooterInteraction.BuildScooter(); 
