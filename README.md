@@ -34,6 +34,8 @@ Based on the teams that are asigned for the car dealership project we will do th
 5. Team Tricked (Daniel Vega Aguirre, Michael Mollinedo Peña)
 7. Gitting Jean Paul Santivañez, Leonardo Echalar
 
+9. Valkyries (Elizabeth Mamani, Camila Laura) 
+
 
 
 
