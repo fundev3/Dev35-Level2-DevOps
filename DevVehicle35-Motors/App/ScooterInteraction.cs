@@ -37,7 +37,7 @@ namespace DevVehicle35_Motors.App
 						3. 🔵 BLUE
 						4. ⚫️ BLACK
 						5. 🟣 PURPLE
-						6. 🟡 Yellow");
+						6. 🟡 YELLOW");
 			string Color = ReadLine();
 			string CorrectColor = ColorVerification(Color);
 
