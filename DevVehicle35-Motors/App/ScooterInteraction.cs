@@ -21,14 +21,14 @@ namespace DevVehicle35_Motors.App
 						  🛵 ➡ 70 km/h
 						  🛵 ➡ 80 km/h
 						  🛵 ➡ 90 km/h "); 
-			string TopSpeed = ReadLine();
-			string CorrectTopSpeed = SpeedValidator(TopSpeed);//Correct speed
+			string topSpeed = ReadLine();
+			string correctTopSpeed = SpeedValidator(topSpeed);//Correct speed
 
 			WriteLine(@"
 						Do you want to get a helmet ?
 						write: yes / no");
-			string Helmet = ReadLine();
-			string HelmetPreference = HelmetVerification(Helmet);//Corect helmet
+			string helmet = ReadLine();
+			string helmetPreference = HelmetVerification(helmet);//Corect helmet
 
 			WriteLine(@"
 						Choose the number color of your scooter:
@@ -38,40 +38,40 @@ namespace DevVehicle35_Motors.App
 						4. ⚫️ BLACK
 						5. 🟣 PURPLE
 						6. 🟡 YELLOW");
-			string Color = ReadLine();
-			string CorrectColor = ColorVerification(Color);
+			string color = ReadLine();
+			string correctColor = ColorVerification(color);
 
-			var Scooter = new Scooter();
-			Scooter.GettingPrice(CorrectTopSpeed, HelmetPreference, CorrectColor);
+			var scooter = new Scooter();
+			scooter.GettingPrice(correctTopSpeed, helmetPreference, correctColor);
 			WriteLine(@"
 						The Scooter is ready!");
-			Console.WriteLine(Scooter.GetDescription());
+			Console.WriteLine(scooter.GetDescription());
 		}
 		public ScooterInteraction()
 		{
 		}
 
-		public static string SpeedValidator(string Speed)
+		public static string SpeedValidator(string speed)
 		{
-			var Speeds = new[] { "40", "50","60","70", "80", "90" };
-			string index = Array.Find(Speeds, element => element == Speed);
+			var speeds = new[] { "40", "50","60","70", "80", "90" };
+			string index = Array.Find(speeds, element => element == speed);
             if (index == null)
             {
                 WriteLine("Introduce a correct speed");
-                Speed = SpeedValidator(ReadLine());
-                return Speed;
+                speed = SpeedValidator(ReadLine());
+                return speed;
             }
             else
             {
-				return Speed; 
+				return speed; 
             }
         }
 
-		public static string HelmetVerification(string Helmet)
+		public static string HelmetVerification(string helmet)
 		{
-			if (Helmet.ToUpper() == "YES" | Helmet.ToUpper() == "NO")
+			if (helmet.ToUpper() == "YES" | helmet.ToUpper() == "NO")
 			{
-				return Helmet.ToUpper();
+				return helmet.ToUpper();
 			}
 			else
 			{
@@ -81,12 +81,12 @@ namespace DevVehicle35_Motors.App
 			
 		}
 
-		public static string ColorVerification(string Color)
+		public static string ColorVerification(string color)
 		{
-			int NumberOfColor = Int32.Parse(Color); 
-			if(NumberOfColor > 0 && NumberOfColor < 7)
+			int numberOfColor = Int32.Parse(color); 
+			if(numberOfColor > 0 && numberOfColor < 7)
 			{
-				return Color; 
+				return color; 
 			}
 			else
 			{

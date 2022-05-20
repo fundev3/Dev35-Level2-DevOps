@@ -33,16 +33,16 @@ namespace DevVehicle35_Motors.Models
 					Price = 1000;
 				}
 
-		public void GettingPrice(string TopSpeed, string Helmet, string Color)
+		public void GettingPrice(string topSpeed, string Helmet, string Color)
 		{
-			SelectTopSpeed(TopSpeed);
+			SelectTopSpeed(topSpeed);
 			SelectHelmet(Helmet);
 			SelectColor(Color);
 		}
 
 		public string GetDescription()
 		{   
-			string Presentation = (@"
+			string presentation = (@"
 					---------------------------------
 					You Got the Following Scooter 🛵
 					----------------------------------");
@@ -55,7 +55,7 @@ namespace DevVehicle35_Motors.Models
 			{
 				GotHelmet = $"\t \t \t \t \t You got a Helmet\n"; 
 			}
-            return Presentation + Description + GotHelmet; 
+            return presentation + Description + GotHelmet; 
 		}
 
 		public void SelectTopSpeed(string TopSpeed)
