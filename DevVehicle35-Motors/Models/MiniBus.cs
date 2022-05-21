@@ -7,54 +7,52 @@
         public int Speed { get; set; }
 
         public int HorsePower { get; set; }
-        
+
         public int Capacity { get; set; }
-        
+
         public int NumberOfWheels { get; set; }
 
         private bool automaticDoor;
         const int passengersCost = 50;
         const int automaticDoorCost = 300;
-        public MiniBus()
+
+        public MiniBus(int capacity, bool automaticDoor)
         {
-            Speed = 200;
-            HorsePower = 1400;
-            Price = 20000;
-            NumberOfWheels = 4;
-            automaticDoor = false;
-
-            Console.WriteLine("How many passenger does it have?");
-            this.capacity(int.Parse(Console.ReadLine()));
-
-            Console.WriteLine("does it have automatic doors? Y/N");
-            string automaticDoors = Console.ReadLine();
-            if (automaticDoors == "Y") this.AddAutomaticDoor();
-
-            Console.WriteLine(GetDescription());
+            this.Speed = 200;
+            this.HorsePower = 1400;
+            this.Price = 20000;
+            this.NumberOfWheels = 4;
+            this.automaticDoor = automaticDoor;
+            this.AddCapacity(capacity);
+            Console.WriteLine(this.GetDescription());
         }
+
         public decimal GetPrice()
         {
-            return Price;
+            return this.Price;
         }
+
         public void AddAutomaticDoor()
         {
-            automaticDoor = true;
-            Price += automaticDoorCost;
+            this.automaticDoor = true;
+            this.Price += automaticDoorCost;
         }
-        public void capacity(int passengers)
+
+        public void AddCapacity(int passengers)
         {
-            Capacity = passengers;
-            Price += (passengers * passengersCost);
+            this.Capacity = passengers;
+            this.Price += passengers * passengersCost;
         }
+
         public string GetDescription()
         {
-            return $"The car is an: MiniBus\n " +
-                   $"It " + (automaticDoor ? "has" : "has not") + " automaticdoor\n" +
-                   $"Capacity: {passengersCost} * {Capacity} \n" +
-                   $"Number of wheels: {NumberOfWheels}\n" +
-                   $"Horse Power:  {HorsePower}\n" +
-                   $"Speed: {Speed}\n" +
-                   $"Price: {Price}";
+            return $"The car is an: MiniBus\n" +
+                   $"It " + (this.automaticDoor ? "has" : "has not") + " automaticdoor: "+ (this.automaticDoor ? automaticDoorCost : "0") + "\n" +
+                   $"Capacity: {this.Capacity}\n" +
+                   $"Number of wheels: {this.NumberOfWheels}\n" +
+                   $"Horse Power:  {this.HorsePower}\n" +
+                   $"Speed: {this.Speed}\n" +
+                   $"Price: {this.Price}";
         }
     }
 }
