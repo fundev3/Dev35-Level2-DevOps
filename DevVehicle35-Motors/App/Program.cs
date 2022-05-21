@@ -1,5 +1,4 @@
 using DevVehicle35_Motors.App;
-using System;
 
 Console.WriteLine("DevVehicles 35 Car Dealership");
 Console.WriteLine("===============================");
@@ -17,6 +16,7 @@ while (option != "q")
     Console.WriteLine("6. Tractor");
     Console.WriteLine("7. Van");
     Console.WriteLine("9. Scooter");
+    Console.WriteLine("10. MiniBus");
     Console.WriteLine("q. Quit");
     option = Console.ReadLine() ?? string.Empty;
     if (option != "q")
@@ -43,10 +43,13 @@ while (option != "q")
                 break;
             case 7:
                 VanInteraction.BuildVan();
-                break; 
+                break;
             case 9:
-                ScooterInteraction.BuildScooter(); 
-                break; 
+                ScooterInteraction.BuildScooter();
+                break;
+            case 10:
+                MiniBusInteraction.CreateMinibus();
+                break;
             default:
                 break;
         }

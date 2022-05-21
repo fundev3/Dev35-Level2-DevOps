@@ -15,6 +15,7 @@ namespace DevVehicle35_Motors.Models
         public int NumberOfWheels { get; set; }
 
         private bool hasEntertainment;
+
         private bool hasBathroom;
 
         internal bool HasEntertainment { get => hasEntertainment; private set => hasEntertainment = value; }
@@ -23,11 +24,11 @@ namespace DevVehicle35_Motors.Models
 
         internal Bus()
         {
-            Speed = 200;
-            HorsePower = 10000;
-            Price = 60000;
-            Capacity = 20;
-            NumberOfWheels = 4;
+            this.Speed = 200;
+            this.HorsePower = 10000;
+            this.Price = 60000;
+            this.Capacity = 20;
+            this.NumberOfWheels = 4;
         }
 
         public string GetDescription()
