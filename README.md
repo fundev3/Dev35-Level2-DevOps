@@ -347,48 +347,9 @@ With that, swagger is ready to run. To see it in action, You can now visit local
 
 **Dockerize!**
 
-Now that We have a working API, it makes sense to add that to our docker-compose file so we can easily bring it up together with the MognoDB database. First, We’ll need a Dockerfile that will specify, how our API is built:
+Now that We have a working API, it makes sense to add that to our docker-compose file so we can easily bring it up together with the MognoDB database. First, 
 
-*Dockerfile*
-
-	FROM microsoft/dotnet:sdk AS build-env
-	WORKDIR /app# Copy everything and build
-	COPY . ./RUN dotnet restore "./TodoApp.csproj"
-	RUN dotnet publish "TodoApp.csproj" -c Release -o outFROM microsoft/dotnet:aspnetcore-runtime
-	WORKDIR /app
-	COPY --from=build-env /app/out .
-	ENTRYPOINT ["dotnet", "TodoApp.dll"]
-
+We’ll need a Dockerfile that will specify, how our API is built.
 Next, we can add a service to our docker-compose.yml file:
 
-	version: '3.1'services:mongo:
-		image: mongo
-		restart: always
-		environment:
-		  MONGO_INITDB_ROOT_USERNAME: root
-		  MONGO_INITDB_ROOT_PASSWORD: example
-		ports:
-		  - 27017:27017mongo-express:
-		image: mongo-express
-		restart: always
-		ports:
-		  - 8081:8081
-		environment:
-		  ME_CONFIG_MONGODB_ADMINUSERNAME: root
-		  ME_CONFIG_MONGODB_ADMINPASSWORD: example
-		depends_on:
-		  - mongotodo-server:
-		build: .
-		restart: always
-		ports:
-		  - 5000:80
-		environment:
-		  MongoDB__Host: mongo
-		depends_on:
-		  - mongo
-
-The port binding will allow us to see todo-server service on the usual port 5000. You can change this to whatever you want (port binding works like host:container, so don’t change the port 80).
-
-The environment variable will override the localhost that we have in our appsettings.json file and will allow the service to connect to the mongo server.
-
-After this is done, you can clear out the previous container by using docker-compose rm -s -f , and the running docker-compose up to start up everything again, including the Todo server.
+This is your task.
