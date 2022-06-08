@@ -11,4 +11,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Controllers\TodoController" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\TodoController.cs" />
+  </ItemGroup>
 </Project>
