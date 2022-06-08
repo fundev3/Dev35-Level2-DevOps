@@ -1,6 +1,6 @@
 version: '3.1'
 services:
-mongo:
+  mongo:
     image: mongo
     restart: always
     environment:
@@ -8,7 +8,7 @@ mongo:
       MONGO_INITDB_ROOT_PASSWORD: example
     ports:
       - 27017:27017
-mongo-express:
+  mongo-express:
     image: mongo-express
     restart: always
     ports:
