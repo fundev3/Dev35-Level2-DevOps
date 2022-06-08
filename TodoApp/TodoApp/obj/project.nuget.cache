@@ -1,15 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "bVhPuel2bVGOk+YrcgdhDAm7Lz2po9d/o3JOBlUcEAMy877h5dV5MZ6zuHPeUM72Fq/cyih6B/dNpOONh5bFGg==",
+  "dgSpecHash": "JAOBA04dcTqDOmqBabnAGPGt3ZJN/Oj2OhcygN2gQooQCsLT/tD8tm0SwkbFcZ447qnWtrYOmvYafEjn1EC1YA==",
   "success": true,
-  "projectFilePath": "D:\\FundacionJala\\Devops\\Proyectocompose\\TodoApp\\TodoApp\\TodoApp.csproj",
+  "projectFilePath": "/Users/raul/Documents/FundacionJala/devops/Dev35-Level2-DevOps/TodoApp/TodoApp/TodoApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\win10\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\win10\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\win10\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\win10\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\win10\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\win10\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    "/Users/raul/.nuget/packages/dnsclient/1.6.0/dnsclient.1.6.0.nupkg.sha512",
+    "/Users/raul/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/raul/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/Users/raul/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/raul/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "/Users/raul/.nuget/packages/mongodb.bson/2.16.0/mongodb.bson.2.16.0.nupkg.sha512",
+    "/Users/raul/.nuget/packages/mongodb.driver/2.16.0/mongodb.driver.2.16.0.nupkg.sha512",
+    "/Users/raul/.nuget/packages/mongodb.driver.core/2.16.0/mongodb.driver.core.2.16.0.nupkg.sha512",
+    "/Users/raul/.nuget/packages/mongodb.libmongocrypt/1.5.2/mongodb.libmongocrypt.1.5.2.nupkg.sha512",
+    "/Users/raul/.nuget/packages/sharpcompress/0.30.1/sharpcompress.0.30.1.nupkg.sha512",
+    "/Users/raul/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/raul/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/raul/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/raul/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "/Users/raul/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/raul/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "/Users/raul/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/Users/raul/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
