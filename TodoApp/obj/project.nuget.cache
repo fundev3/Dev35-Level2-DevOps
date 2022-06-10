@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HBpxA0LkSnLX16bDRZPJ8803L6Z0vdrcM1Lm5dDj1xoCXUICy9rirWZ4/6PBW34rxlogUsG8fq6ZP71Hlpsljg==",
+  "dgSpecHash": "+3cfGtI48gXoFSV3P1zSBxMpXuP83HMDYJPv9XvmgLYQIr8O53kZ1zjy/u5jZIhaD6XaPLdyby6fyT3WhWWUcA==",
   "success": true,
-  "projectFilePath": "D:\\repos\\TESTS\\TodoApp\\TodoApp.csproj",
+  "projectFilePath": "D:\\repos\\Backend\\Git\\Dev35-Level2-PracticeGitHub\\Dev35-Level2-DevOps\\TodoApp\\TodoApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daniel\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
     "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

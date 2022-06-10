@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\TESTS\\TodoApp\\TodoApp.csproj": {}
+    "D:\\repos\\Backend\\Git\\Dev35-Level2-PracticeGitHub\\Dev35-Level2-DevOps\\TodoApp\\TodoApp.csproj": {}
   },
   "projects": {
-    "D:\\repos\\TESTS\\TodoApp\\TodoApp.csproj": {
+    "D:\\repos\\Backend\\Git\\Dev35-Level2-PracticeGitHub\\Dev35-Level2-DevOps\\TodoApp\\TodoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\TESTS\\TodoApp\\TodoApp.csproj",
+        "projectUniqueName": "D:\\repos\\Backend\\Git\\Dev35-Level2-PracticeGitHub\\Dev35-Level2-DevOps\\TodoApp\\TodoApp.csproj",
         "projectName": "TodoApp",
-        "projectPath": "D:\\repos\\TESTS\\TodoApp\\TodoApp.csproj",
+        "projectPath": "D:\\repos\\Backend\\Git\\Dev35-Level2-PracticeGitHub\\Dev35-Level2-DevOps\\TodoApp\\TodoApp.csproj",
         "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\TESTS\\TodoApp\\obj\\",
+        "outputPath": "D:\\repos\\Backend\\Git\\Dev35-Level2-PracticeGitHub\\Dev35-Level2-DevOps\\TodoApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
