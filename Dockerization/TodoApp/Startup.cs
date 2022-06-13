@@ -4,7 +4,8 @@ namespace TodoApp
     {
         var config = new ServerConfig();
         Configuration.Bind(config);    
-        var todoContext = new TodoContext(config.MongoDB);
-        services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+        var todoContext = new TodoContext(config.MongoDB);    
+        var repo = new TodoRepository(todoContext);    
+        services.AddSingleton<ITodoRepository>(repo);services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
     }
 }
