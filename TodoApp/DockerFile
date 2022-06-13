@@ -1,0 +1,18 @@
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+EXPOSE 80
+EXPOSE 443
+WORKDIR /
+COPY *.sln .
+COPY /TodoApp/*.csproj ./TodoApp/
+RUN dotnet restore
+
+COPY TodoApp/. ./TodoApp/
+
+WORKDIR /TodoApp
+
+RUN dotnet publish -c release -o /bin
+
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
+WORKDIR /bin
+COPY --from=build /bin ./
+ENTRYPOINT ["dotnet", "TodoApp.dll"]
