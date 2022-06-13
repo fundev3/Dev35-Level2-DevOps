@@ -12,7 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="NewFolder\" />
+    <None Remove="Microsoft.Extensions.Configuration" />
+    <None Remove="Models\" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
 </Project>

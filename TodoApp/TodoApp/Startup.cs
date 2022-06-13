@@ -6,8 +6,8 @@
         {
             var config = new ServerConfig();
             Configuration.Bind(config);
-
-            services.AddMvc();
+            var todoContext = new TodoContext(config.MongoDB);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
     }
 }
