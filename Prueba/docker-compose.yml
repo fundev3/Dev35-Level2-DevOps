@@ -1,0 +1,42 @@
+﻿version: '3.1'
+services:
+  mongo:
+    image: mongo
+    container_name: mongog1
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - 27017:27017
+    networks:
+      - MONGO
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-expressg1
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_MONGODB_PORT: 27017
+    networks:
+      - MONGO
+    depends_on:
+      - mongo
+  webapi:
+    image: todog1
+    container_name: todoappg1
+    restart: always
+    ports:
+      - 5001:5001
+    networks:
+      - MONGO
+    depends_on:
+      - mongo 
+      - mongo-express
+networks:
+  MONGO:
+    name: MONGO
