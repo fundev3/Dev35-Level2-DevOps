@@ -1,4 +1,4 @@
-namespace TodoApp
+/*namespace TodoApp
 {
     public void ConfigureServices(IServiceCollection services)
     {
@@ -19,4 +19,4 @@ namespace TodoApp
         });
 
     }
-}
+}*/
