@@ -26,6 +26,15 @@ services:
       - MONGO
     depends_on:
       - mongo
+  TodoApp:
+    image: "todoapp"
+    build: ./TodoApp/ 
+    ports:
+      - 8080:80
+    environment:
+      MongoDB__Host: mongo
+    networks:
+      - MONGO
 networks:
   MONGO:
     name: MONGO
