@@ -27,11 +27,26 @@ services:
     depends_on:
       - mongo
   webapi:
-    image: todog1
+    build: .
     container_name: todoappg1
     restart: always
     ports:
-      - 5001:5001
+      - 5001:80
+    environment:
+      MongoDB__Host: mongog1
+    networks:
+      - MONGO
+    depends_on:
+      - mongo 
+      - mongo-express
+  webapiv2:
+    build: .
+    container_name: todoappg1v2
+    restart: always
+    ports:
+      - 5003:80
+    environment:
+      MongoDB__Host: mongog1
     networks:
       - MONGO
     depends_on:

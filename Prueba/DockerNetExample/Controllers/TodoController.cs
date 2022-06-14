@@ -14,7 +14,8 @@ namespace DockerNetExample.Controllers
 		private readonly ITodoRepository _repo; public TodosController(ITodoRepository repo)
 		{
 			_repo = repo;
-		}        // GET api/todos
+		}        
+		// GET api/todos
 		[HttpGet]
 		public async Task<ActionResult<IEnumerable<Todo>>> Get()
 		{
