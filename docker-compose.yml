@@ -31,7 +31,9 @@ services:
     container_name: todoapptest
     restart: always
     ports:
-      - 5001:5001
+      - 8080:80
+    environment:
+      MongoDB__Host: mongo
     networks:
       - MONGO
     depends_on:

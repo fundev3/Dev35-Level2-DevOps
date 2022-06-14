@@ -1,21 +1,14 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine as build
-
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /app
+ 
+# Copy everything and build
+COPY . ./
+ 
+RUN dotnet restore TodoApp/TodoApp.csproj
+RUN dotnet publish TodoApp/TodoApp.csproj -c Release -o out
+ 
 
-COPY . .
-
-RUN dotnet restore
-
-RUN dotnet publish -o /app/published-app
-
-
-
-FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine as runtime
-
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
-
-COPY --from=build /app/published-app /app
-
-EXPOSE 5001
-
-ENTRYPOINT [ "dotnet", "/app/TodoApp.dll" ]
+COPY --from=build-env /app/out .
+ENTRYPOINT ["dotnet", "TodoApp.dll"]
