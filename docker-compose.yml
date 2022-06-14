@@ -26,6 +26,18 @@ services:
       - MONGO
     depends_on:
       - mongo
+  todoapp:
+    container_name: todoapp
+    build: .
+    restart: always
+    ports:
+      - 5000:80
+    networks:
+      - MONGO
+    depends_on:
+      - mongo
+    environment:
+      MongoDB__Host: mongo
 networks:
   MONGO:
     name: MONGO

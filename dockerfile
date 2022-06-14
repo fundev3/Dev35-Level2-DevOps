@@ -10,6 +10,7 @@ WORKDIR /source/TodoApp
 RUN dotnet publish -c release -o /app
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine
+ENV ASPNETCORE_ENVIRONMENT=Development
 WORKDIR /app
 COPY --from=build /app/ ./
 ENTRYPOINT [ "dotnet", "TodoApp.dll" ]
