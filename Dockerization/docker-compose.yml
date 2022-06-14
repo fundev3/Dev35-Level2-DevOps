@@ -26,6 +26,16 @@ services:
       - MONGO
     depends_on:
       - mongo
+  todoapi:
+    image: todoapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7129:5044"
+    depends_on: 
+      - mongo
+      - mongo-express
 networks:
   MONGO:
     name: MONGO
