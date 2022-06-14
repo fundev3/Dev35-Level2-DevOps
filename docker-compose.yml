@@ -26,6 +26,16 @@ services:
       - MONGO
     depends_on:
       - mongo
+  todoapp:
+    build: ./TodoApp/
+    container_name: todoapptest
+    restart: always
+    ports:
+      - 5001:5001
+    networks:
+      - MONGO
+    depends_on:
+      - mongo
 networks:
   MONGO:
     name: MONGO
