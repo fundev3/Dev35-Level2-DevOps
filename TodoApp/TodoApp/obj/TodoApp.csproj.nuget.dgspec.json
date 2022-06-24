@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Fundacion Jala\\GithubRepository\\Dev35-Level2-DevOps\\TodoApp\\TodoApp\\TodoApp.csproj": {}
+    "/Users/raul/Documents/FundacionJala/devops/Dev35-Level2-DevOps/TodoApp/TodoApp/TodoApp.csproj": {}
   },
   "projects": {
-    "D:\\Fundacion Jala\\GithubRepository\\Dev35-Level2-DevOps\\TodoApp\\TodoApp\\TodoApp.csproj": {
+    "/Users/raul/Documents/FundacionJala/devops/Dev35-Level2-DevOps/TodoApp/TodoApp/TodoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Fundacion Jala\\GithubRepository\\Dev35-Level2-DevOps\\TodoApp\\TodoApp\\TodoApp.csproj",
+        "projectUniqueName": "/Users/raul/Documents/FundacionJala/devops/Dev35-Level2-DevOps/TodoApp/TodoApp/TodoApp.csproj",
         "projectName": "TodoApp",
-        "projectPath": "D:\\Fundacion Jala\\GithubRepository\\Dev35-Level2-DevOps\\TodoApp\\TodoApp\\TodoApp.csproj",
-        "packagesPath": "C:\\Users\\Ely\\.nuget\\packages\\",
-        "outputPath": "D:\\Fundacion Jala\\GithubRepository\\Dev35-Level2-DevOps\\TodoApp\\TodoApp\\obj\\",
+        "projectPath": "/Users/raul/Documents/FundacionJala/devops/Dev35-Level2-DevOps/TodoApp/TodoApp/TodoApp.csproj",
+        "packagesPath": "/Users/raul/.nuget/packages/",
+        "outputPath": "/Users/raul/Documents/FundacionJala/devops/Dev35-Level2-DevOps/TodoApp/TodoApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ely\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/raul/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -46,6 +45,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
